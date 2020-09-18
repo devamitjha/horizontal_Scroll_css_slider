@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.horizontal_slider {
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #eee;
+}
+
+/*this is for chrome / firefox/ opera and safari*/
+.horizontal_slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* for ms*/
+.horizontal_slider {
+    -ms-overflow-style: none;
+}
+
+.slider_container {
+    display: block;
+    white-space: nowrap;
+}
+
+.item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.item img {
+    width: 150px;
+    height: 225px;
+    object-fit: cover;
+}
